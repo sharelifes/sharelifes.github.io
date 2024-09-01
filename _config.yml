@@ -1,24 +1,4 @@
-# 欢迎来到 Jekyll！
-#
-# 此配置文件用于影响整个博客的设置，值
-# 你需要设置一次，之后很少编辑。如果您发现
-# 自己经常编辑这个文件，考虑使用 Jekyll 的数据文件
-# 功能，用于您需要经常更新的数据。
-#
-# 由于技术原因，当你使用
-# 'bundle exec jekyll serve'.如果您更改了此文件，请重新启动服务器进程。
-#
-# 如果你需要 YAML 语法方面的帮助，这里有一些快速参考给你：
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# 站点设置
-# 这些用于个性化您的新网站。如果您查看 HTML 文件，
-# 您将看到它们通过 {{ site.title }}、{{ site.email }} 等访问。
-# 您可以创建任何您想要的自定义变量，并且它们将可以访问
-# 在模板中通过 {{ site.myvariable }}。
-
-title: Li Bochen's Blog!
+title: Li Bochen's Blog
 email: li.bochen@foxmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website, if you want to contact me, please send my email.
@@ -32,20 +12,3 @@ contact_note: Please send my email if you want to contact me.
 theme: jekyll-theme-clean-blog
 plugins:
   - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-exclude:
-  - .github/
-  - .idea/
-  - .gitignore
-  - CNAME
-  - Gemfile
-  - Gemfile.lock
-  - README.md
