@@ -1,31 +1,33 @@
-# Welcome to Jekyll!
+# 欢迎来到 Jekyll！
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# 此配置文件用于影响整个博客的设置，值
+# 你需要设置一次，之后很少编辑。如果您发现
+# 自己经常编辑这个文件，考虑使用 Jekyll 的数据文件
+# 功能，用于您需要经常更新的数据。
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 由于技术原因，当你使用
+# 'bundle exec jekyll serve'.如果您更改了此文件，请重新启动服务器进程。
 #
-# If you need help with YAML syntax, here are some quick references for you:
+# 如果你需要 YAML 语法方面的帮助，这里有一些快速参考给你：
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 站点设置
+# 这些用于个性化您的新网站。如果您查看 HTML 文件，
+# 您将看到它们通过 {{ site.title }}、{{ site.email }} 等访问。
+# 您可以创建任何您想要的自定义变量，并且它们将可以访问
+# 在模板中通过 {{ site.myvariable }}。
 
 title: Li Bochen's Blog!
 email: li.bochen@foxmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website, if you want to contact me, please send my email.
+footer_text: Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://startbootstrap.com/theme/clean-blog-jekyll">jekyll-theme-clean-blog</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.sharelives.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  sharelifes
-
+contact_note: Please send my email if you want to contact me.
 # Build settings
 theme: jekyll-theme-clean-blog
 plugins:
@@ -39,14 +41,11 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .github/
+  - .idea/
+  - .gitignore
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md

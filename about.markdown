@@ -1,18 +1,12 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
+background: '/assets/images/banner.jpg'
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+This page is about my experience, I was born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with a Bachelor of Science degree in Software Engineering in 2024.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I used to intern in Bosch. At present, I am working in the Neusoft “Energy and Civil Aviation Division - Production and Operation Development Center - Smart IoT Development Team” team as a software engineer.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I have a variety of hobbies, such as astronomical observation, listening to music, photography, and traveling. Especially, in order to have a better understanding of astronomy, I have met many astronomy enthusiasts and astronomers.
