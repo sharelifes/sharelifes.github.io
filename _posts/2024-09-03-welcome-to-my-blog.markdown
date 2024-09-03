@@ -8,7 +8,7 @@ sticky: true
 ---
 
 Welcome to my blog, I'm Li Bochen, born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with
-a Bachelor of Science degree in Software Engineering in 2024.
+a Bachelor of Engineering degree in Software Engineering in 2024.
 
 I used to intern in Bosch. At present, I am working in the Neusoft “Energy and Civil Aviation Division - Production and
 Operation Development Center - Smart IoT Development Team” team as a software engineer.
