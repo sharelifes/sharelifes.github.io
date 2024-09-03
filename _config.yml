@@ -1,5 +1,6 @@
 title: Li Bochen's Blog
 email: li.bochen@foxmail.com
+author: Li Bochen
 description: >- # this means to ignore newlines until "baseurl:"
   This is my personal website, if you want to contact me, please send my email.
 footer_text: Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://startbootstrap.com/theme/clean-blog-jekyll">jekyll-theme-clean-blog</a> theme.
