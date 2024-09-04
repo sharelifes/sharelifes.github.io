@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Welcome to My Blog!"
+title: "欢迎来到我的博客"
 date: 2024-09-03 21:56:46 +0800
 categories: jekyll update
-background: '/assets/images/banner.jpg'
 sticky: true
-language: "en"
+language: "zh"
 ---
 
 Welcome to my blog, I'm Li Bochen, born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with
