@@ -34,7 +34,7 @@ layout: default
                 <!-- Home Post List -->
                 {% for post in site.posts limit : 5 %}
                 {% if post.language == "zh" %}
-                1
+
                 {% continue %}
                 {% endif %}
                 {% if post.sticky != true %}
