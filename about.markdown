@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 background: '/assets/images/banner.jpg'
+language: "en"
 ---
 
 This page is about my experience, I was born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with a Bachelor of Engineering degree in Software Engineering in 2024.

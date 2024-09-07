@@ -1,5 +1,6 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    {% if page.language == "en" %}
     <div class="container">
         <a class="navbar-brand" href="{{"/" | relative_url }}">{{ site.title | escape }}</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +19,7 @@
                     <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
+                    <a class="nav-link" href="{{"/posts" | relative_url }}">Posts</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{"/others" | relative_url }}">Others</a>
@@ -26,4 +27,34 @@
             </ul>
         </div>
     </div>
+    {% else %}
+    <div class="container">
+        <a class="navbar-brand" href="{{"/zh" | relative_url }}">{{ site.zh-title | escape }}</a>
+        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
+                type="button">
+            目录
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{"/" | relative_url }}">English</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{"/zh" | relative_url }}">主页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{"/zh/about" | relative_url }}">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{"/zh/posts" | relative_url }}">博 客</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{"/zh/others" | relative_url }}">其他链接</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    {% endif %}
 </nav>

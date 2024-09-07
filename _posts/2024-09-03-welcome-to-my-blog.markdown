@@ -15,6 +15,5 @@ I used to intern in Bosch. At present, I am working in the Neusoft “Energy and
 Operation Development Center - Smart IoT Development Team” team as a software engineer.
 
 I have a variety of hobbies, such as astronomical observation, listening to music, photography, and traveling.
-Especially, in order to have a better understanding of astronomy, I have met many astronomy enthusiasts and astronomers.
 
 I will share my life on this website and look forward to your visit!

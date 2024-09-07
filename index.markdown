@@ -3,4 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 background: '/assets/images/banner.jpg'
+language: "en"
+title: Li Bochen's Blog
+description: This is my personal website, if you want to contact me, please send my email.
 ---
