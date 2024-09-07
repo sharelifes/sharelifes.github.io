@@ -120,10 +120,10 @@ layout: default
                     <p class="post-meta">发布于
                         {{ post.date | date: '%Y年%m月%d日' }}
                         ，作者
-                        {% if post.author %}
-                        {{ post.author }}
+                        {% if post.zh-author %}
+                        {{ post.zh-author }}
                         {% else %}
-                        {{ site.author }}
+                        {{ site.zh-author }}
                         {% endif %}
                     </p>
                 </article>
@@ -150,10 +150,10 @@ layout: default
                     <p class="post-meta">发布于
                         {{ post.date | date: '%Y年%m月%d日' }}
                         ，作者
-                        {% if post.author %}
-                        {{ post.author }}
+                        {% if post.zh-author %}
+                        {{ post.zh-author }}
                         {% else %}
-                        {{ site.author }}
+                        {{ site.zh-author }}
                         {% endif %}
                     </p>
                 </article>

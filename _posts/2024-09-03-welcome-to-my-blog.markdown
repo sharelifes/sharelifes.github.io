@@ -3,9 +3,12 @@ layout: post
 title: "Welcome to My Blog!"
 date: 2024-09-03 21:56:46 +0800
 categories: jekyll update
+permalink: /welcome
 background: '/assets/images/banner.jpg'
 sticky: true
 language: "en"
+next-url: /Java
+next-title: Java Tutorial
 ---
 
 Welcome to my blog, I'm Li Bochen, born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with

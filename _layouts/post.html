@@ -18,11 +18,17 @@ layout: default
                         {% if page.subtitle %}
                         <h2 class="subheading">{{ page.subtitle }}</h2>
                         {% endif %}
+                        {% if page.language == "en" %}
                         <span class="meta">Posted by
               <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
-              on {{ page.date | date: '%B %d, %Y' }} &middot; {% include read_time.html
-              content=page.content %}
+              on {{ page.date | date: '%B %d, %Y' }}
             </span>
+                        {% else %}
+                        <span class="meta">作者
+              <a href="#">{% if page.zh-author %}{{ page.zh-author }}{% else %}{{ site.zh-author }}{% endif %}</a>
+              ，发布于 {{ page.date | date: '%Y年%m月%d日' }}
+            </span>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -38,21 +44,36 @@ layout: default
                 <hr>
 
                 <div class="clearfix">
-
-                    {% if page.previous.url %}
+                    {% if page.language == "en" %}
+                    {% if page.last-url %}
                     <a class="btn btn-primary float-left"
                        data-placement="top" data-toggle="tooltip"
-                       href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.previous.title }}">&larr; Previous<span
+                       href="{{ page.last-url | prepend: site.baseurl | replace: '//', '/' }}"
+                       title="{{ page.last-title }}">&larr; Previous<span
                             class="d-none d-md-inline">
-              Post</span></a>
+                  Post</span></a>
                     {% endif %}
-                    {% if page.next.url %}
+                    {% if page.next-url %}
                     <a class="btn btn-primary float-right"
                        data-placement="top" data-toggle="tooltip"
-                       href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
-              Post</span> &rarr;</a>
+                       href="{{ page.next-url | prepend: site.baseurl | replace: '//', '/' }}"
+                       title="{{ page.next-title }}">Next<span class="d-none d-md-inline">
+                  Post</span> &rarr;</a>
                     {% endif %}
-
+                    {% else %}
+                    {% if page.last-url %}
+                    <a class="btn btn-primary float-left"
+                       data-placement="top" data-toggle="tooltip"
+                       href="{{ page.last-url | prepend: site.baseurl | replace: '//', '/' }}"
+                       title="{{ page.last-title }}">上一篇</a>
+                    {% endif %}
+                    {% if page.next-url %}
+                    <a class="btn btn-primary float-right"
+                       data-placement="top" data-toggle="tooltip"
+                       href="{{ page.next-url | prepend: site.baseurl | replace: '//', '/' }}"
+                       title="{{ page.next-title }}">下一篇</a>
+                    {% endif %}
+                    {% endif %}
                 </div>
 
             </div>

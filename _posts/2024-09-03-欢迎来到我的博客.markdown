@@ -3,8 +3,11 @@ layout: post
 title: "欢迎来到我的博客"
 date: 2024-09-03 21:56:46 +0800
 categories: jekyll update
+permalink: /zh/welcome
 sticky: true
 language: "zh"
+next-url: /zh/Java
+next-title: Java教程
 ---
 
 欢迎来到我的博客，我是李博晨，出生于中国河北省唐山市。毕业于河北师范大学并于 2024年获得软件工程学士学位。
