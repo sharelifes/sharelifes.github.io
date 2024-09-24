@@ -6,4 +6,13 @@ background: '/assets/images/banner.jpg'
 language: "zh"
 ---
 
-{% include posts/zh-list.liquid %}
+<ul>
+    {% for post in site.posts %}
+        {% if post.language == "zh" and post.item == "list" %}
+            <li>
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                {{ post.excerpt }}
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>

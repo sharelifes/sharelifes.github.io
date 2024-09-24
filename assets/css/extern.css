@@ -1,0 +1,54 @@
+#container { /* Allows the sidebar to be positioned absolutely within this container */
+    width: 100%;
+    max-width: 1200px; /* You can adjust this based on your layout needs */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+#sidebar {
+    z-index: 1;
+    position: sticky;
+    top: 8rem;
+    width: 10vw;
+    min-width: 125px;
+    margin-left: 10%;
+    float: left;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+#sidebar > ul {
+    padding-left: 20%;
+    width: 80%;
+    list-style-type: none;
+}
+
+#content {
+    margin-left: 25%;
+    width: 70%;
+}
+
+.items {
+    width: 90%;
+    margin: 5%;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 760px) {
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 17px;
+    }
+}

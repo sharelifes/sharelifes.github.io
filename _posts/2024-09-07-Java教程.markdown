@@ -6,6 +6,7 @@ categories: jekyll update
 permalink: /zh/Java
 background: '/assets/images/banner.jpg'
 language: "zh"
+item: list
 last-url: /zh/welcome
 last-title: 欢迎来到我的博客
 ---

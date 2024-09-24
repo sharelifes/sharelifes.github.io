@@ -7,6 +7,7 @@ permalink: /welcome
 background: '/assets/images/banner.jpg'
 sticky: true
 language: "en"
+item: list
 next-url: /Java
 next-title: Java Tutorial
 ---

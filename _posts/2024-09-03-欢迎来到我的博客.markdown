@@ -4,8 +4,10 @@ title: "欢迎来到我的博客"
 date: 2024-09-03 21:56:46 +0800
 categories: jekyll update
 permalink: /zh/welcome
+background: '/assets/images/banner.jpg'
 sticky: true
 language: "zh"
+item: list
 next-url: /zh/Java
 next-title: Java教程
 ---

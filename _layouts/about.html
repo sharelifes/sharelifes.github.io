@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+        style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    {% else %}
+    <header class="masthead">
+        {% endif %}
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="page-heading">
+                        <h1>{{ page.title }}</h1>
+                        {% if page.description %}
+                        <span class="subheading">{{ page.description }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="container">
+        <div class="col-sm-3" id="sidebar">
+            <ul>
+                {% for item in page.items %}
+                <li><a href="#{{ item.title }}">{{ item.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-sm-9" id="content">
+            {% for item in page.items %}
+            <div class="items" id="{{ item.title }}">
+                <h1 style="font-style: italic;color: yellowgreen">{{ item.title }}</h1>
+                {% if item.display == "basic" %}
+                <table style="margin: 2% 5%">
+                    {% for i in item.content %}
+                    <tr>
+                        <td style="width: 30%;">{{ i.title }}:</td>
+                        <td>{{ i.content }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% else %}
+                <table style="margin-left: 5%">
+                    {% for i in item.content %}
+                    <tr>
+                        <td style="width: 30%;font-size:25px;font-style: oblique;line-height: 40px">{{ i.title }}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:lightblue;font-size: 17px">{{ i.job }}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 17px">{{ i.time }}</td>
+                    </tr>
+                    <tr>
+                        <td style="font-style: italic;font-size: 17px">{{ i.content }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>

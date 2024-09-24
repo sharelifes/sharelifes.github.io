@@ -6,6 +6,7 @@ categories: jekyll update
 permalink: /Java
 background: '/assets/images/banner.jpg'
 language: "en"
+item: list
 last-url: /welcome
 last-title: Welcome to My Blog!
 ---
