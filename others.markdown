@@ -2,6 +2,7 @@
 layout: page
 title: other links
 description: These are some other websites, hoping to help you!
+language: "en"
 permalink: /others/
 background: '/assets/images/banner.jpg'
 ---

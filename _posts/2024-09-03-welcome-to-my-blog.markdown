@@ -15,8 +15,7 @@ next-title: Java Tutorial
 Welcome to my blog, I'm Li Bochen, born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with
 a Bachelor of Engineering degree in Software Engineering in 2024.
 
-I used to intern in Bosch. At present, I am working in the Neusoft “Energy and Civil Aviation Division - Production and
-Operation Development Center - Smart IoT Development Team” team as a software engineer.
+I worked as a software engineer at Bosch and Neusoft. Currently, I am in charge of technical support for ManageEngine related products in Zoho.
 
 I have a variety of hobbies, such as astronomical observation, listening to music, photography, and traveling.
 
