@@ -12,4 +12,4 @@ background: '/assets/images/banner.jpg'
 
 如果你想添加你的网站，请给我发邮件。
 
-[home]: https://www.sharelives.asia/zh
+[home]: https://blog.codeglimpse.top/zh

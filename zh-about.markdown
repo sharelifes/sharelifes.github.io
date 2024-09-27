@@ -15,7 +15,7 @@ items:
       - title: 电子邮箱
         content: <a href="mailto:li.bochen@foxmail.com" target="_blank">li.bochen@foxmail.com</a>
       - title: 个人网站
-        content: <a href="https://www.sharelives.asia/zh/" target="_blank">https://www.sharelives.asia/zh/</a>
+        content: <a href="https://blog.codeglimpse.top/zh/" target="_blank">https://blog.codeglimpse.top/zh/</a>
   - title: 工作经历
     content:
       - title: <a href="https://www.zoho.com.cn/" target="_blank">卓豪中国</a>

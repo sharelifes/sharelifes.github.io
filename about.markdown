@@ -15,7 +15,7 @@ items:
       - title: Email
         content: <a href="mailto:li.bochen@foxmail.com" target="_blank">li.bochen@foxmail.com</a>
       - title: Url
-        content: <a href="https://www.sharelives.asia/" target="_blank">https://www.sharelives.asia/</a>
+        content: <a href="https://blog.codeglimpse.top/" target="_blank">https://blog.codeglimpse.top/</a>
   - title: Work
     content:
       - title: <a href="https://www.zoho.com/" target="_blank">ZoHo</a>

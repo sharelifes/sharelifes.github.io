@@ -13,4 +13,4 @@ Waiting for add ...
 
 If you want to add your website, please send me email.
 
-[home]: https://www.sharelives.asia
+[home]: https://blog.codeglimpse.top
