@@ -1,0 +1,78 @@
+---
+layout: post
+title: "简介"
+date: 2024-09-27 23:50:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Home
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+next-url: /zh/Intellij/The-IntelliJ-Platform
+next-title: IntelliJ平台
+---
+
+# IntelliJ平台SDK
+通过创建插件、自定义语言支持或 UI 主题来扩展 IntelliJ 平台。
+
+<a href="https://plugins.jetbrains.com/docs/intellij/plugins-quick-start.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Quick-start-guide.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/about.html"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/The-Intellij-Platform-SDK.png"></a>
+快速入门指南（左图）：使用 IntelliJ 平台和创建插件的基础知识。   
+IntelliJ 平台 SDK（右图）：内容简介和概述。
+
+# 开始使用
+<a href="https://plugins.jetbrains.com/docs/intellij/developing-plugins.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Developing-a-Plugin.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/themes-getting-started.html"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/Developing-a-Theme.png"></a>
+开发插件（左图）：开始构建 IDE 插件。   
+开发主题（右图）：自定义 IDE 外观。
+<hr>
+
+# 探索和学习
+<div>
+<a href="https://plugins.jetbrains.com/docs/intellij/getting-help.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Getting-Help.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/explore-api.html"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/Explore-the-Intellij-Platform-API.png"></a>
+</div>
+获取帮助（左图）：加入我们的插件开发人员社区，提出问题并提供反馈。   
+探索 IntelliJ 平台 API（右图）：探索 API 的策略和工具。
+<div>
+<a href="https://plugins.jetbrains.com/docs/intellij/explore-api.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Useful-Links.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/learning-resources.html"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/Learning-Resources.png"></a>
+</div>
+有用的链接（左图）：有用的工具、插件和存储库。   
+学习资源（右图）：有关插件开发的文章和网络研讨会。
+<div>
+<a href="hhttps://plugins.jetbrains.com/docs/intellij/learning-resources.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Jetbrains-Platform-Blog.png"></a>
+<a href="https://www.youtube.com/playlist?list=PLQ176FUIyIUZRWGCFY7G9V5zaM00THymY"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/Busy-Plugin-Developers-Playlist.png"></a>
+</div>
+JetBrains 平台博客（左图）：关于 JetBrains 产品的插件和扩展开发的所有信息。    
+活跃的插件开发账号 - 作品集：包含录制的网络研讨会的 YouTube 作品集。
+<hr>
+
+# 保持最新状态
+<div>
+<a href="https://plugins.jetbrains.com/docs/intellij/content-updates.html"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Content-Updates.png"></a>
+<a href="https://jb.gg/mp-updates"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/MarketPlace-Developer-News.png"></a>
+</div>
+内容更新（左图）：文档的最新更新。   
+Marketplace 开发人员新闻（右图）：订阅以接收新闻和公告。
+<hr>
+
+# 跟踪 API 更改
+<div>
+<a href="https://plugins.jetbrains.com/docs/intellij/verifying-plugin-compatibility.html"><img style="width: 30%; margin: 2.5% 1.5%; float: left" src="/assets/images/Intellij/Compatibility-Tooling.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/api-changes-list.html"><img style="width: 30%; margin: 2.5% 1.5%;" src="/assets/images/Intellij/Incompatible-API-Changes.png"></a>
+<a href="https://plugins.jetbrains.com/docs/intellij/api-notable.html"><img style="width: 30%; margin: 2.5% 1.5%;" src="/assets/images/Intellij/Notable-API-Changes.png"></a>
+</div>
+兼容性工具（左图）：使用 Plugin Verifier 和 IDE 功能。   
+不兼容的 API 更改（中图）：已知的重大更改。   
+值得注意的 API 更改（右图）：值得注意的更改和新功能。
+<hr>
+
+# 工具
+<div>
+<a href="https://jb.gg/ipe"><img style="width: 45%; margin: 2.5%; float: left" src="/assets/images/Intellij/Intellij-Platform-Explorer.png"></a>
+<a href="https://plugins.jetbrains.com/plugin-ideas/"><img style="width: 45%; margin: 2.5%;" src="/assets/images/Intellij/Plugin-Ideas.png"></a>
+</div>
+IntelliJ 平台资源管理器（左图）：探索开源插件中的扩展和监听器。   
+插件建议（右图）：浏览新插件的建议并对其进行投票。

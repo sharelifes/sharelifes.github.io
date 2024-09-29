@@ -9,6 +9,8 @@ language: "zh"
 item: list
 last-url: /zh/welcome
 last-title: 欢迎来到我的博客
+next-url: /zh/Intellij
+next-title: IntelliJ平台SDK文档
 ---
 
 这是由我整理的Java教程，希望能帮助到你!

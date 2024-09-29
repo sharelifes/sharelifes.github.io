@@ -15,8 +15,8 @@ next-title: Java Tutorial
 Welcome to my blog, I'm Li Bochen, born in Tangshan, Hebei Province, China. Graduated from Hebei Normal University with
 a Bachelor of Engineering degree in Software Engineering in 2024.
 
-I worked as a software engineer at Bosch and Neusoft. Currently, I am in charge of technical support for ManageEngine related products in Zoho.
+I worked as a software engineer at Bosch and Neusoft. Currently, I am in charge of technical support for ManageEngine products in Zoho.
 
-I have a variety of hobbies, such as astronomical observation, listening to music, photography, and traveling.
+I have a variety of hobbies, such as astronomical observation, listening to music, photography and traveling.
 
 I will share my life on this website and look forward to your visit!

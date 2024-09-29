@@ -60,6 +60,14 @@ layout: default
                        title="{{ page.next-title }}">Next<span class="d-none d-md-inline">
                   Post</span> &rarr;</a>
                     {% endif %}
+                    {% if page.menu-url %}
+                    <div style="display: flex; justify-content: center;">
+                        <a class="btn btn-primary"
+                           data-placement="top" data-toggle="tooltip"
+                           href="{{ page.menu-url | prepend: site.baseurl | replace: '//', '/' }}"
+                           title="{{ page.menu-title }}">Menu</a>
+                    </div>
+                    {% endif %}
                     {% else %}
                     {% if page.last-url %}
                     <a class="btn btn-primary float-left"
@@ -73,9 +81,16 @@ layout: default
                        href="{{ page.next-url | prepend: site.baseurl | replace: '//', '/' }}"
                        title="{{ page.next-title }}">下一篇</a>
                     {% endif %}
+                    {% if page.menu-url %}
+                    <div style="display: flex; justify-content: center;">
+                        <a class="btn btn-primary"
+                           data-placement="top" data-toggle="tooltip"
+                           href="{{ page.menu-url | prepend: site.baseurl | replace: '//', '/' }}"
+                           title="{{ page.menu-title }}">目录</a>
+                    </div>
+                    {% endif %}
                     {% endif %}
                 </div>
-
             </div>
         </div>
     </div>

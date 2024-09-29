@@ -1,0 +1,14 @@
+---
+layout: post
+title: "IntelliJ平台"
+date: 2024-09-29 19:50:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/The-IntelliJ-Platform
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/Home
+last-title: 简介
+---

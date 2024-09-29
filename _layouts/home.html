@@ -32,7 +32,7 @@ layout: default
 
                 {% if page.language == "en" %}
                 <!-- Home Post List -->
-                {% for post in site.posts limit : 5 %}
+                {% for post in site.posts %}
                 {% if post.language == "zh" or post.item != "list" %}
                 {% continue %}
                 {% endif %}
@@ -63,7 +63,7 @@ layout: default
 
                 {% endfor %}
 
-                {% for post in site.posts limit : 5 %}
+                {% for post in site.posts %}
                 {% if post.language == "zh" or post.item != "list" %}
                 {% continue %}
                 {% endif %}
@@ -101,7 +101,7 @@ layout: default
 
                 {% else %}
                 <!-- Home Post List -->
-                {% for post in site.posts limit : 5 %}
+                {% for post in site.posts %}
                 {% if post.language == "en" or post.item != "list" %}
                 {% continue %}
                 {% endif %}
@@ -131,7 +131,7 @@ layout: default
 
                 {% endfor %}
 
-                {% for post in site.posts limit : 5 %}
+                {% for post in site.posts %}
                 {% if post.language == "en" or post.item != "list" %}
                 {% continue %}
                 {% endif %}
