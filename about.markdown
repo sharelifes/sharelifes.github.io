@@ -13,7 +13,7 @@ items:
       - title: Label
         content: Software Engineer, Technical Support Engineer
       - title: Email
-        content: <a href="mailto:li.bochen@foxmail.com" target="_blank">li.bochen@foxmail.com</a>
+        content: <a href="mailto:libochen@codeglimpse.top" target="_blank">libochen@codeglimpse.top</a>
       - title: Url
         content: <a href="https://blog.codeglimpse.top/" target="_blank">https://blog.codeglimpse.top/</a>
   - title: Work

@@ -13,7 +13,7 @@ items:
       - title: 职位
         content: 软件工程师，技术支持工程师
       - title: 电子邮箱
-        content: <a href="mailto:li.bochen@foxmail.com" target="_blank">li.bochen@foxmail.com</a>
+        content: <a href="mailto:libochen@codeglimpse.top" target="_blank">libochen@codeglimpse.top</a>
       - title: 个人网站
         content: <a href="https://blog.codeglimpse.top/zh/" target="_blank">https://blog.codeglimpse.top/zh/</a>
   - title: 工作经历
