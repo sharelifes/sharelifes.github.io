@@ -3,7 +3,7 @@ layout: post
 title: "简介"
 date: 2024-09-27 23:50:00 +0800
 categories: jekyll update
-permalink: /zh/Intellij/Home
+permalink: /zh/Intellij/home
 background: '/assets/images/banner.jpg'
 language: "zh"
 item: post

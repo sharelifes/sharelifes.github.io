@@ -3,7 +3,7 @@ layout: post
 title: "Home"
 date: 2024-09-27 23:50:00 +0800
 categories: jekyll update
-permalink: /Intellij/Home
+permalink: /Intellij/home
 background: '/assets/images/banner.jpg'
 language: "en"
 item: post
