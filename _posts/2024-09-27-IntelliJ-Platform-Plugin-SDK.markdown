@@ -22,6 +22,7 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 - - - _**[IntelliJ Platform Coding Guidelines][IntelliJ Platform Coding Guidelines]**_
 - - _**[About This Guide][About This Guide]**_
 - - - _**[Key Topics][Key Topics]**_
+- - - _**[Contributing to the IntelliJ Platform SDK][Contributing to the IntelliJ Platform SDK]**_
     
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
@@ -31,3 +32,4 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 [IntelliJ Platform Coding Guidelines]: /Intellij/IntelliJ-Platform-Coding-Guidelines
 [About This Guide]: /Intellij/About-This-Guide
 [Key Topics]: /Intellij/Key-Topics
+[Contributing to the IntelliJ Platform SDK]: /Intellij/Contributing-to-the-IntelliJ-Platform-SDK
