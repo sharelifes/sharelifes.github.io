@@ -20,9 +20,11 @@ last-title: Java教程
 - - _**[The IntelliJ Platform][The IntelliJ Platform]**_: Intellij 开源平台简介。
 - - - _**[Contributing to the IntelliJ Platform][Contributing to the IntelliJ Platform]**_: 为 IntelliJ 平台做贡献
 - - - _**[IntelliJ Platform Coding Guidelines][IntelliJ Platform Coding Guidelines]**_: IntelliJ 平台编码准则
+- - _**[About This Guide][About This Guide]**_: 关于本指南
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
 [Home]: /zh/Intellij/home
 [The IntelliJ Platform]: /zh/Intellij/The-IntelliJ-Platform
 [Contributing to the IntelliJ Platform]: /zh/Intellij/Contributing-to-the-IntelliJ-Platform
 [IntelliJ Platform Coding Guidelines]: /zh/Intellij/IntelliJ-Platform-Coding-Guidelines
+[About This Guide]: /zh/Intellij/About-This-Guide

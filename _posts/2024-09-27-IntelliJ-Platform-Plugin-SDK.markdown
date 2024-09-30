@@ -15,11 +15,12 @@ This is IntelliJ Platform Plugin SDK documents, which helps to learn the Intelli
 Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 
 ## Menu
-- _**[Home][Home]**_: Home page of Intellij Platform Plugin SDK
+- _**[Home][Home]**_
 - _**Introduction**_
-- - _**[The IntelliJ Platform][The IntelliJ Platform]**_: Introduction to the Intellij Open Source Platform.
+- - _**[The IntelliJ Platform][The IntelliJ Platform]**_
 - - - _**[Contributing to the IntelliJ Platform][Contributing to the IntelliJ Platform]**_
 - - - _**[IntelliJ Platform Coding Guidelines][IntelliJ Platform Coding Guidelines]**_
+- - _**[About This Guide][About This Guide]**_
     
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
@@ -27,3 +28,4 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 [The IntelliJ Platform]: /Intellij/The-IntelliJ-Platform
 [Contributing to the IntelliJ Platform]: /Intellij/Contributing-to-the-IntelliJ-Platform
 [IntelliJ Platform Coding Guidelines]: /Intellij/IntelliJ-Platform-Coding-Guidelines
+[About This Guide]: /Intellij/About-This-Guide
