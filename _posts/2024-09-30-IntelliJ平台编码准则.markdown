@@ -1,0 +1,64 @@
+---
+layout: post
+title: "IntelliJ 平台编码准则"
+date: 2024-09-30 13:30:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/IntelliJ-Platform-Coding-Guidelines
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/Contributing-to-the-IntelliJ-Platform
+last-title: 为 IntelliJ 平台做贡献
+---
+# IntelliJ 平台编码指南
+
+如果您正在编写代码并希望为 IntelliJ 平台做出贡献，则遵循这些准则将使 JetBrains 开发团队更容易审查和接受您的更改。
+
+## 遵循最新的源代码
+
+如果您提交补丁，我们强烈建议您根据 intellij-community Git 存储库中的最新版本代码构建补丁。最简单的方法是克隆仓库，在 Git 中跟踪您的工作，并按照提交补丁中的说明提供您的更改。
+
+## 一般架构原则
+
+请尽量遵循常见的 Java 架构原则。Joshua Bloch 的 “Effective Java” 是一个很好的学习资源。
+
+## 测试
+
+功能测试涵盖了 IntelliJ IDEA 的大部分现有功能。如果测试涵盖您正在修改的区域，则必须运行测试并确保您的更改不会引入任何新的测试错误。此外，强烈建议您提供新的功能测试，以涵盖您修复的 bug 或您添加的新功能。
+
+## 代码格式化
+
+我们通常对代码格式设置相当宽松，但至少必须遵守以下约定：
+
+- 源文件中的 2 个空格缩进
+- 对实例变量使用 my 前缀，对类变量使用 our 前缀。
+- 新的源代码文件必须包含带有 Apache 2 许可证的版权声明和贡献者的姓名。
+
+遵循我们的代码格式指南的最简单方法是使用共享代码样式重新格式化您提交的代码，该样式包含在 IntelliJ IDEA Community Edition 项目目录中。
+
+## 检查
+
+IntelliJ IDEA Community Edition 项目包括一个共享的检查配置文件。我们强烈建议您提交的代码不包含该检查配置文件中配置的检查突出显示的任何警告。
+
+## Javadoc 注释
+
+如果您的代码添加了新的 OpenAPI 接口、类、方法或扩展点，则必须提供描述 API 的参数和预期用途的 Javadoc 注释。为代码的其他部分提供 Javadoc 或其他注释是一个好主意，但不是必需的。
+
+## 提交
+
+为避免在审核更改时进行不必要的工作，请遵循以下准则：
+
+- 在将补丁或拉取请求提交给我们之前，请仔细查看补丁或拉取请求中的所有更改。确保您更改的所有内容都是有原因的。
+- 请不要在补丁中包含未完成的工作。确保它不包含任何 TODO 注释。如果您添加了一些代码但最终不需要它，请确保在提交补丁之前将其删除。
+- 请不要将包含任何有关于影响格式、修复“黄色代码”（警告）或代码样式的更改与实际修复错误或实施功能的更改一起提交。没有人喜欢留下糟糕的代码，请记住，混合这些更改会使审查过程变得复杂。
+- 请不要在单个补丁或拉取请求中修复多个问题。
+- 请不要提交配置文件（runConfigurations/IDEA.xml、codeStyleSettings.xml、misc.xml 等），除非它对修复本身是必需的。
+- 请避免移动或重命名代码，除非更改是必要的。保持向后兼容性对于平台至关重要。
+
+理想的拉取请求将包含一个提交，其中包含修复错误或实现功能所需的一切，但不包含其他任何内容。“Commit early， commit often” 完全适用于本地提交，但这种 “public commits” 很难审查（审查者需要花费更多时间来审查正在进行的工作，或者一次审查所有更改，从而丢失存储在提交消息中的宝贵信息）。
+
+最好的办法是尽早提交，然后用描述性的提交消息将所有提交压缩为一个。
+
+有时候一个问题需要多个提交，但是每个提交都应该是独立的“步骤”，用于解决问题。
