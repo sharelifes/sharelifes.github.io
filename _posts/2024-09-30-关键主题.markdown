@@ -1,0 +1,44 @@
+---
+layout: post
+title: "关键主题"
+date: 2024-09-30 14:30:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Key-Topics
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/About-This-Guide
+last-title: 关于本指南
+next-url: 
+next-title: 
+---
+
+# 关键主题
+
+IntelliJ 平台范围广泛且功能强大，其规模和范围最初可能非常令人生畏。本页旨在列出插件作者可能感兴趣的关键主题，并提供指向最常见扩展点的快速链接。
+
+## 基本概念
+
+- 开发插件。
+- 测试概述。
+- 组件模型 - IntelliJ 平台是一个基于组件的应用程序，负责创建组件和注入依赖项。了解这一点对于构建插件是必要的。
+- 扩展点 - 如何向扩展点注册组件，以及如何找出可用的扩展点。
+- 虚拟文件 - 所有文件访问都应通过虚拟文件系统，该系统对文件系统进行抽象和缓存。这意味着您可以使用本地文件系统上的文件、zip 文件中的文件或版本控制中的旧版本文件。
+
+> 另请参阅 词汇表 以获取常用术语的便捷参考。
+
+## 代码模型
+
+IntelliJ 平台的代码模型称为 PSI，即程序结构接口。PSI 解析代码、构建索引并创建语义模型。
+
+## 常用扩展点
+
+IntelliJ 平台具有极强的可扩展性，大多数功能和服务都可以扩展。一些常见的扩展点是：
+
+- 操作 - 菜单和工具栏项
+- 代码检查 - 代码分析，查看语法树和语义模型，并在编辑器中突出显示问题。
+- 意图 - 当文本插入符号位于特定位置时，Alt+Enter 菜单中可用的特定于上下文的操作。
+- 代码补全。
+

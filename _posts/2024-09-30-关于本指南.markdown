@@ -11,10 +11,12 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/IntelliJ-Platform-Coding-Guidelines
 last-title: IntelliJ 平台编码准则
+next-url: /zh/Intellij/Key-Topics
+next-title: 关键主题
 ---
 # 关于本指南
 
-本指南分为几个部分，类似于教科书。每个指南都基于上一节的内容，但无需按顺序阅读指南。关键主题页面旨在链接到能够理解架构并开始构建插件所需的页面。
+本指南分为几个部分，类似于教科书。每个指南都基于上一节的内容，但无需按顺序阅读指南。关键主题 页面旨在链接到能够理解架构并开始构建插件所需的页面。
 
 所有源链接和参考列表都以 IntelliJ 平台 2024.2.3 为目标。
 

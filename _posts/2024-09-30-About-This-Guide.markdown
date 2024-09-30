@@ -11,6 +11,8 @@ menu-url: /Intellij
 menu-title: IntelliJ Platform Plugin SDK
 last-url: /Intellij/IntelliJ-Platform-Coding-Guidelines
 last-title: IntelliJ Platform Coding Guidelines
+next-url: /Intellij/Key-Topics
+next-title: Key Topics
 ---
 
 # About This Guide
