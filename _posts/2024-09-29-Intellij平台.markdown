@@ -11,6 +11,8 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/Home
 last-title: 简介
+next-url: /zh/Intellij/Contributing-to-the-IntelliJ-Platform
+next-title: 为 IntelliJ 平台做贡献
 ---
 # IntelliJ 平台
 
@@ -26,7 +28,7 @@ IntelliJ 平台具有一个全文编辑器，其中包含语法突出显示、�
 
 IntelliJ 平台包括适用于多种语言的解析器和 PSI 模型，其可扩展性意味着可以添加对其他语言的支持。
 
-# 插件
+## 插件
 
 在 IntelliJ 平台上构建的产品是可扩展的应用程序，平台负责创建扩展。IntelliJ 平台完全支持插件，JetBrains 托管 JetBrains Marketplace，该市场可用于分发支持一个或多个产品的插件。也可以利用自定义的插件存储库分发插件。
 
@@ -35,7 +37,7 @@ IntelliJ 平台包括适用于多种语言的解析器和 PSI 模型，其可扩
 > #### 插件替代
 > 在某些情况下，可能不需要实现实际的 IntelliJ 平台插件，因为存在其他解决方案。
 
-# 开源
+## 开源
 
 IntelliJ 平台是开源的，在 Apache 许可下，并托管在 GitHub 上。
 
@@ -45,7 +47,7 @@ IntelliJ 平台的版本由相应的 IntelliJ IDEA Community Edition 版本的�
 
 通常，基于 IntelliJ 平台的 IDE 会将 intellij-community 存储库作为 Git 子模块包含在内，并提供配置以描述 intellij-community 中的哪些插件，以及哪些自定义插件将构成产品。
 
-# 基于 IntelliJ 平台的 IDE
+## 基于 IntelliJ 平台的 IDE
 
 IntelliJ 平台是许多 JetBrains IDE 的基础。IntelliJ IDEA Ultimate 是 IntelliJ IDEA 社区版的超集，但包含闭源插件（请参阅此功能比较）。同样，WebStorm 和 DataGrip 等其他产品基于 IntelliJ IDEA 社区版，但包含一组不同的插件，不包括其他默认插件。这允许插件面向多个产品，因为每个产品都将包含基本功能和 IntelliJ IDEA Community Edition 存储库中的一系列插件。
 

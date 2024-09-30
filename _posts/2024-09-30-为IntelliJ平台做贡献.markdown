@@ -1,0 +1,70 @@
+---
+layout: post
+title: "为 IntelliJ 平台做贡献"
+date: 2024-09-30 9:20:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Contributing-to-the-IntelliJ-Platform
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/The-IntelliJ-Platform
+last-title: IntelliJ平台
+---
+
+# 为 IntelliJ 平台做贡献
+
+请务必阅读行为准则。
+
+## 参与社区
+
+### 参与新闻组和论坛
+
+您可以加入多个社区论坛和新闻组来讨论 IntelliJ 平台和 IDE。对于有兴趣进行技术讨论、回答问题或为新手解决潜在问题的用户和贡献者来说，这些论坛是很好的资源。
+
+### 链接到 IntelliJ 平台主页
+
+任何开源项目的成功都取决于使用该产品并为项目做出贡献的人数。通过链接到 https://www.jetbrains.com/opensource/idea ，您可以增加新用户或贡献者了解项目并加入社区的机会。
+
+如果您和我们一样对 IntelliJ IDEA 社区版感兴趣，可以通过链接来向我们展示。链接还提供了项目徽标等其他资源。
+
+### 推广 IntelliJ 平台和 IntelliJ IDEA 社区版
+
+通过使用您的博客、Twitter、Facebook 或向您最喜欢的本地媒体提交文章，帮助推广平台和 IDE。如果您是其他开源社区的成员，为什么不在他们的论坛或会议上提及 IntelliJ IDEA 呢？如果您喜欢 IntelliJ IDEA，请不要犹豫 - 大声说出来！使用 IntelliJ IDEA 的开发者越多，捕获的 bug 就越多，编写的插件就越多，项目就越可见，社区得到的好处就越多！
+
+## 帮助他人学习
+
+### 写文档
+
+我们一直在寻找有关 IntelliJ IDEA 功能的新文章以及 IntelliJ 平台的文档。您可以编写教程、操作方法、示例应用程序，或分享您使用 IntelliJ 平台的经验。您可以在网站或博客上发布文档，或者向 SDK 文档提交拉取请求。
+
+### 制作短视频
+
+短视频最近变得非常流行，作为向其他开发人员展示如何有效使用该工具的一种方式。您可以录制有关您发现的特定功能或使用案例的短视频，并希望与社区共享。
+
+## 贡献代码
+
+### 提交 Bug 报告
+
+提交 Bug 报告需要很少的时间，对开发人员非常有帮助。这是您可以做出的最简单贡献之一。当您发现 IDE 或平台有问题时，请报告它。请确保提供有关您的系统环境的信息（可从 About （关于） 菜单中获得）、重现问题的步骤以及问题的书面描述。您可以在我们的 YouTrack 问题跟踪器中提交错误。在提交问题之前，请搜索描述相同问题的已提交问题 — 如果您找到一个，请随时投票。
+
+### 帮助分类现有的 bug 报告
+
+多年来，用户已向 IntelliJ IDEA 问题跟踪器提交了数千个问题。许多未解决的问题不再适用于最新版本的 IntelliJ IDEA，是重复的，或者需要其他信息才能解决。留下评论通知此类问题的状态有助于团队保持问题跟踪器的整洁和对每个人都有用。
+
+### 编写插件
+
+编写插件是贡献更大代码段的最佳方式之一，即向 IntelliJ IDEA 或任何其他基于 IntelliJ 平台的 IDE 添加额外功能。您可以将插件提交到 JetBrains Marketplace，使其可供所有用户使用。在编写插件时，您可以控制代码，无需签署贡献协议。
+
+### 提交补丁
+
+如果您想改进 IntelliJ 平台中的代码或 IntelliJ IDEA 的核心功能，可以向 GitHub 上的 IntelliJ IDEA Community Edition 存储库提交拉取请求。在准备更改时，请确保遵循 IntelliJ 平台编码准则。开发人员将审查您的贡献，如果它符合质量标准并且与代码的其余部分非常吻合，您将收到有关补丁接受的通知。
+
+正在寻找要解决的问题？标有 #patch_welcome 标签的 Issue 正在寻找外部贡献者。
+
+或者，您也可以将补丁附加到 YouTrack 错误数据库中的工单。您可以提交附加了补丁的新问题，也可以将补丁附加到其他用户提交的问题。在这种情况下，您还需要签署 JetBrains Contributor 许可协议 （CLA） 才能完成您的贡献。
+
+### 成为提交者
+
+具有长期提交高质量补丁历史的开发人员可以获得直接提交权限。

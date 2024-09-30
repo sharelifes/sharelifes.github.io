@@ -11,6 +11,8 @@ menu-url: /Intellij
 menu-title: IntelliJ Platform Plugin SDK
 last-url: /Intellij/Home
 last-title: Home
+next-url: /Intellij/Contributing-to-the-IntelliJ-Platform
+next-title: Contributing to the IntelliJ Platform
 ---
 
 # The IntelliJ Platform
@@ -27,7 +29,7 @@ But the IntelliJ Platform's real power comes from the Program Structure Interfac
 
 The IntelliJ Platform includes parsers and a PSI model for many languages, and its extensible nature means that it is possible to add support for other languages.
 
-# Plugins
+## Plugins
 
 Products built on the IntelliJ Platform are extensible applications, with the platform being responsible for creating Extensions. The IntelliJ Platform fully supports plugins, and JetBrains hosts the JetBrains Marketplace, which can be used to distribute plugins that support one or more of the products. It is also possible to distribute plugins using a Custom Plugin Repository.
 
@@ -36,7 +38,7 @@ Plugins can extend the platform in many ways, from adding a simple menu item to 
 > ### Plugin Alternatives
 > In some cases, implementing an actual IntelliJ Platform plugin might not be necessary, as alternative solutions exist.
 
-# Open Source
+## Open Source
 
 The IntelliJ Platform is Open Source, under the Apache License, and hosted on GitHub.
 
@@ -46,7 +48,7 @@ The version of the IntelliJ Platform is defined by the version of the correspond
 
 Typically, an IDE that is based on the IntelliJ Platform will include the intellij-community repository as a Git submodule and provide configuration to describe which plugins from the intellij-community, and which custom plugins will make up the product.
 
-# IDEs Based on the IntelliJ Platform
+## IDEs Based on the IntelliJ Platform
 
 The IntelliJ Platform underlies many JetBrains IDEs. IntelliJ IDEA Ultimate is a superset of the IntelliJ IDEA Community Edition but includes closed-source plugins (see this feature comparison). Similarly, other products such as WebStorm and DataGrip are based on the IntelliJ IDEA Community Edition, but with a different set of plugins included and excluding other default plugins. This allows plugins to target multiple products, as each product will include base functionality and a selection of plugins from the IntelliJ IDEA Community Edition repository.
 
