@@ -17,12 +17,13 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 ## Menu
 - _**[Home][Home]**_
 - _**Introduction**_
-- - _**[The IntelliJ Platform][The IntelliJ Platform]**_
-- - - _**[Contributing to the IntelliJ Platform][Contributing to the IntelliJ Platform]**_
-- - - _**[IntelliJ Platform Coding Guidelines][IntelliJ Platform Coding Guidelines]**_
-- - _**[About This Guide][About This Guide]**_
-- - - _**[Key Topics][Key Topics]**_
-- - - _**[Contributing to the IntelliJ Platform SDK][Contributing to the IntelliJ Platform SDK]**_
+  - _**[The IntelliJ Platform][The IntelliJ Platform]**_
+    - _**[Contributing to the IntelliJ Platform][Contributing to the IntelliJ Platform]**_
+    - _**[IntelliJ Platform Coding Guidelines][IntelliJ Platform Coding Guidelines]**_
+  - _**[About This Guide][About This Guide]**_
+    - _**[Key Topics][Key Topics]**_
+    - _**[Contributing to the IntelliJ Platform SDK][Contributing to the IntelliJ Platform SDK]**_
+      - _**[SDK Docs Style Guide][SDK Docs Style Guide]**_
     
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
@@ -33,3 +34,4 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 [About This Guide]: /Intellij/About-This-Guide
 [Key Topics]: /Intellij/Key-Topics
 [Contributing to the IntelliJ Platform SDK]: /Intellij/Contributing-to-the-IntelliJ-Platform-SDK
+[SDK Docs Style Guide]: /Intellij/SDK-Docs-Style-Guide
