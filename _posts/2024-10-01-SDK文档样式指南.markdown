@@ -1,0 +1,265 @@
+---
+layout: post
+title: "SDK文档样式指南"
+date: 2024-10-01 21:00:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/SDK-Docs-Style-Guide
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/Contributing-to-the-IntelliJ-Platform-SDK
+last-title: 为 IntelliJ 平台 SDK 做贡献
+---
+
+
+# SDK文档样式指南
+
+本文档介绍了在编写开源 IntelliJ Platform SDK 文档时使用的编写风格。在开始之前，请仔细阅读此页面以及行为准则和许可证文档。另请参阅 为IntelliJ平台SDK做贡献 页面，了解一些一般性说明。
+
+有关为 IntelliJ 平台本身做贡献的信息，请访问 为 IntelliJ 平台做贡献 页面。
+
+首先，我们应该牢记我们的受众和他们的目标：通常情况下，阅读技术内容的人通常是为了回答一个具体的问题。这个问题可能很广泛，也可能是具体明确的，不管怎样，我们的目标是在不分散注意力的情况下提供答案。
+
+要验证语法和拼写正确，强烈建议使用 Grazie Professional 插件在 IDE 中即时突出显示任何问题。
+
+## 文档标记
+
+文档项目使用 Writerside，因此应安装该插件才能在 IDE 中获得完全支持。主题文件本身是使用一些特定于 Writerside 的自定义标记的 Markdown 文件 （*.md）（请参阅下文）。
+
+### 页面格式
+
+每个 Markdown 文件 **必须** 以版权声明开头，使用 HTML 注释表示法进行格式化：
+
+`<!-- Copyright 2000-2024 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->`
+
+它 **必须* 后跟一个标题，使用 1 级标题定义其标题：
+
+`# Contributing to the IntelliJ Platform SDK`
+
+页面标题应尽可能简洁，以便可以按原样在目录中重复使用。
+
+#### 摘录
+
+每个页面 **应该** 在主页内容之前使用专用的 '' 标签提供简短的摘录（通常为一句话<link-summary>）：
+
+`<link-summary>Defining groups of related settings.</link-summary>`
+
+#### 突出显示的链接
+
+页面可以使用 `<tldr>` 标签在实际内容之前突出显示相关主题和其他重要链接。链接必须以 "**加粗的类别名称**：链接1，链接2，\[...]" (示例) 的形式进行分组。
+
+使用 _Reference_ 来链接到其他主题，使用 _Code_ 来链接到代码/文件，使用 _UI Guidelines_ 来链接到界面指南，使用 _Product Help_ 来链接到 IntelliJ IDEA 帮助。
+
+#### 介绍性文本
+
+**不**要对任何介绍性文本使用 _Introduction_、_Overview_ 等标题。
+
+## 内容样式
+
+### 术语
+
+一致的术语有助于读者更快地掌握新概念：
+
+- GitHub 存储库 `intellij-community` 中的开源代码称为 IntelliJ 平台。使用 SDK 文档中的完整短语。
+- 基于 IntelliJ 平台的 IDE 称为 _IntelliJ Platform-based IDEs_ 。在页面上使用该术语后，作者可以使用 IDE。
+- 提及 JetBrains 产品时，请始终使用全名，例如 _IntelliJ IDEA Ultimate Edition_。但是，仅当可扩展性或功能特定于产品时，才使用产品名称。
+
+> #### 不要使用 TODO
+> 不鼓励在 `intellij-sdk-docs` 的 main 分支中使用 TODO/todo 注释。虽然总是有例外，但最好的情况是在最终审核之前解决所有 TODO。如果无法立即解决，请编写一个 YouTrack SDK 问题来捕获 TODO 并从文档中删除注释。
+
+### 文本格式约定
+
+将每个句子另起一行。对于很长的句子，请在 `,` ， `;` 或其他合理位置添加额外的换行符。很长的链接也应该在单独的行上。
+
+用于标准化引用和关键字的文本样式：
+
+- 菜单路径使用 `<ui-path>` 括起来，竖线字符分隔每个级别： `<ui-path>设置 |编辑器</ui-path>`： **设置 \|编辑器** 在表格中，使用 `&#124;` 而不是 `|` 来防止逃避问题。
+- 用户界面元素名称（如标签、按钮、复选框等）用 `<control>` 括起来：`Press <control>Continue</continue>`：按 **Continue**
+- 非代码关键字和引号或非代码文件的名称格式为斜体样式：\_Theme\_ （_Theme_）、\_README.md\_ （_README.md._）此文件类型的示例包括 _LICENSE.txt_ 和 _README.md_。
+- 代码关键字和类名的格式为代码样式：\`interface\`： `interface`， \`AnAction\`： `AnAction`， \`name\` attribute： `name` 属性。
+- 文件名使用 `<path>`：`<path>build.gradle.kts</path>` **build.gradle.kts** 。
+- 文件格式全部以大写字母显示：PNG 和 XML。
+- 当完整文件名、路径或 URL 的一部分时，文件扩展名不大写：**plugin.xml**。
+- 在非代码部分中使用 $PLACEHOLDER$ 时，必须对其进行转义：`<path>\$PLACEHOLDER\$/somePath</path>`。
+- 键盘快捷键用 `<shortcut>` 括起来：`press <shortcut>Alt+Insert</shortcut>` 变成 “press Alt+Insert”。
+- 有关表示代码片段的最佳实践，请参阅突出显示语法的准则。
+- 有关在链接中表示源文件名称的更多详细信息，请参阅 IntelliJ Platform Source 的链接。
+
+### 链接
+
+链接作为标准 Markdown 链接处理，可以锚定到外部站点、站点内的页面或页面中的标题。
+
+当 Markdown 标头转换为 HTML 标头时，会为其分配一个 ID，以便可以链接它。例如，`## Basics` 的 ID 为 `basics` ，可以在同一页面或跨页面上链接，如下所述。
+
+在某些情况下（例如，相同的标题文本在同一页面上多次出现），需要手动指定不同的 ID：
+
+    ## Task 1
+    ### Properties
+    {#task1-properties}
+    [...]
+    
+    ## Task 2
+    ### Properties
+    {#task2-properties}
+    [...]
+
+#### 一般链接
+
+常规 Markdown 链接具有默认的 Markdown 链接样式：
+
+- `[Gradle]（https://gradle.org）` （Gradle） 链接到外部网站，例如公司、文章等。如果 URL 包含 `%` 字符，则附加 `{ignore-vars=“true”}`。
+- 链接到 SDK 文档中的页面和页面部分：
+    - `[Page Title]（page.md）` 或 `[]（page.md）` （使用页面标题作为链接文本）链接到 SDK 文档页面（均位于 **/topics** 下）。请注意，扩展名是 **.md**，而不是 **.html**。
+    - SDK 文档中页面的特定部分通过使用部分锚点进行链接。锚点名称将全部小写，空格将替换为 `-`，例如，`## Page setup` 变为 `#page-setup`。输入链接的锚点 （`#`） 字符后，IDE 代码完成功能将显示可用部分。
+        - `[Link to a section on the current page]（#another-section）` 链接到当前页面上的标题。
+        - `[Link to the section on another page]（other_page.md#another-section）` 链接到另一个页面上的标题。
+          如果所需的链接标签与 SDK 文档页面或章节标题相同，请将标签部分留空，例如 `[]（test-page.md）` 或 `[]（test-page.md#section-1）`。空链接标签将自动填充实际的页面或部分标题。
+#### 链接到 IntelliJ 平台源代码
+
+指向 IntelliJ 平台 （`intellij-community`） 存储库中文件的链接使用 `%gh-ic%` 前缀，而不是存储库的完整 URL。指向其他 GitHub 存储库中源代码包中文件的链接遵循相同的规则，但链接使用 **v.list** 中定义的不同自定义 `gh-...` 前缀。
+
+- `[README.md]（%gh-ic%/README.md）` 链接到任何通用的非代码信息文件。（README.md）此文件类型的示例包括 _LICENSE.txt_ 和 _README.md_。
+- `[IdeaPlugin.xml]（%gh-ic%/community-resources/resources/META-INF/IdeaPlugin.xml）` 指向声明性源代码文件的链接，使用 `code` 样式。（`IdeaPlugin.xml`）此文件类型的示例包括：`settings.gradle`、`plugin.xml` 或 `theme_basics.theme.json`。
+- `[AnAction]（%gh-ic%/platform/editor-ui-api/src/com/intellij/openapi/actionSystem/AnAction.java）` 指向代码对象（如接口和类）的源文件的链接，使用 `code` 样式，但没有文件扩展名。（`AnAction`）此文件类型的示例包括 Java 和 Kotlin 源代码。
+    - 请注意链接中类名周围使用了 \`\` 字符。
+    - 以这种方式链接到 API 时，链接中不需要 FQN。
+    - 按照惯例，不使用文件扩展名（\*.java、\*.kt、\*.py 等）。
+    - 使用此类链接时要谨慎。通常，文档页面上的给定文件只需要一个链接。
+
+### 高亮语法准则
+
+段落内代码片段和 IntelliJ 平台 API 根据以下规则进行格式设置。
+
+#### 代码
+
+- 避免使用诸如 “ `Foo` interface” 或 “ `Foo` abstract class” 之类的限定符。相反，请参考 `Foo`。
+- FQN 用于对页面上的接口、类或包的首次引用。不要使用 `AnAction`，而是将其引入 `com.intellij.openapi.actionSystem.AnAction`。页面上的后续引用可以是 `AnAction`。例外：FQN 不与 GitHub 链接一起使用。
+- 方法名称总是使用空括号：“call `bar（）` to apply.” 为清楚起见，需要时，方法名称会以类/接口名称为前缀：`Foo.bar（）`。
+
+#### 扩展点
+
+- 对于页面上的第一次出现，扩展点名称必须后跟“扩展点 （EP）”。以下所有匹配项都可以使用 “EP” 后缀。
+- 首次在页面上引入扩展点 （EP） 时，请使用 FQN。引入 `com.intellij.stubIndex` 而不是 `stubIndex`。页面上的后面提及可以是 `stubIndex`。
+
+#### XML
+
+- 对于 XML 元素，请使用带有语法高亮的标记表示法：`<idea-version>`。属性以语法高亮显示，属性值以引号显示：`since-build=“191”`。
+
+### 源代码
+
+源代码使用代码围栏表示，代码围栏是三个反引号。
+
+通过在第一组刻度后指定语言来应用语法高亮显示：
+
+    ```xml
+    <tagName attribute="value">XML Text</tagName>
+    ```
+
+支持的语言包括纯文本的 `xml`, `java`, `kotlin`, `groovy`, `bash`, `md`, `php`, 和 `text`。
+
+> 源代码块前后必须有一个空行，并且必须具有用于高亮显示的语言规范（使用 `text` 作为备用）。
+
+在代码围栏指定相对于 **code_samples** 根文件夹的完整路径后，可以使用 'src' 属性在页面上导入整个文件。
+
+`{src="simple_language_plugin/src/main/java/org/intellij/sdk/language/SimpleFoldingBuilder.java"}`
+
+优点是代码可以来自 `code_samples` 目录，因此它将是不会静默过时的实时代码。
+
+缺点是该文件可能包含一个大类，太大以至于文档页面没有用。如果可能，请使用 `include-symbol=“ClassName”` 来只显示类体，而不显示任何头文件和导入。要仅包含特定方法，请另外指定 `include-symbol=“methodName”` 。
+
+在任何情况下，请保持代码示例简洁，并避免任何不必要的 “surrounding” 代码或 import 语句。
+
+### 表
+
+语法是使用竖线 （`|`） 和减号：
+
+    | Column 1 | Column 2 | Column 3 |
+    |----------|----------|----------|
+    | Blah     | Blah     | Blah     |
+
+使用`&#124;`（删除 `#` 之前的空格！） 而不是 `|` 来防止单元格内 `<ui-path>` 元素的转义问题。
+
+将 `<p>Line 1</p><p>Line 2</p>` 用于单元格中的多行内容。
+
+### 注释和标注
+
+可以使用 blockquote 语法指定注释和标注。转换器查看文本块后指定的 `type` 属性。如果是这样，它将应用注解样式。以下示例将显示为标注，样式为 “note”：
+
+    > This is a simple note.
+    >
+    {style="note"}
+
+> 这是一个简单的说明。
+
+可用于标注的样式包括：
+
+- `tip` - 提高读者工作效率的信息（默认）。
+- `note` - 读者需要理解的重要信息。此标注保留给基本点和概念。
+- `warning` - 用户需要了解以防止失败或错误的关键信息。
+
+复杂标注还可以指定 `title` 属性：
+
+    > This is a note.
+    > We have a lot of text.
+    > Don't make everyone read it fully by adding a good title.
+    >
+    {title="A useful title"}
+
+> ##### 一个有用的标题
+> 这是一条注释。我们有很多文本。通过添加一个好的标题，避免让每个人都完全阅读它。
+
+### 图片
+
+每个页面通常在根 **/images** 中有一个专用的子目录。
+
+本文档中的图片通常是屏幕截图。为了保持一致性，图像的宽度应为 296、460 或 706 像素。首选图像格式是分辨率为 144 DPI 的 PNG。72 DPI 的分辨率是可以接受的，但在高分辨率显示器上可能看起来模糊。
+
+使用 Window Resizer 插件精确调整 IDE 应用程序窗口的大小。
+
+减小图像文件的大小以防止存储库膨胀并影响文档站点的性能，这一点至关重要。使用 PNG 优化器插件等工具优化图像文件。
+
+通过向图像添加 Markdown 链接，将图像嵌入到文档中，如下所示：
+
+> `![Alt text](image.png)`
+
+如果需要调整图片的宽度，可以按如下方式指定：
+
+> `![Alt text](image.png){width="42"}`
+
+#### 缩放弹出窗口
+
+太大而无法放入主要内容的图像可以具有 + 叠加控件以打开带有 “zoomed” 变体的弹出窗口。
+
+###### PNG
+
+对于 **PNG** 图片, 使用以下表示法提供其他缩放变体 **image.zoomed.png** ：
+
+> `![Alt text](image.png){thumbnail="true"}`
+
+###### SVG
+
+对于 **SVG** 图片, 使用此表示法:
+
+> `![Alt text](image.svg){thumbnail-same-file="true"}`
+
+## 目录
+
+站点的目录显示在站点左侧的树视图中，它是从 **ijs.tree** 文件生成的。该列表可以包含嵌套项，这些项在目录中显示为子项。
+
+如果绝对需要，可以通过 `toc-title` 属性覆盖页面标题文本以显示在目录中。
+
+### 占位符
+
+如果节点未指定其 `id` 属性，则它仍将出现在目录中，但会灰显且不可点击。它充当文档项的占位符。占位符可用于跟踪应该记录但尚未记录的内容，并且有助于向读者展示该主题存在但尚未记录（始终欢迎拉取请求！）
+
+### 重定向
+
+重命名页面时，**必须** 配置重定向，以便现有书签继续工作。必须更新其他主题中的所有现有链接。
+
+在 `accepts-web-file-names` 属性中指定先前的路径，包括 **.html** 扩展名：
+
+    <toc-element
+          id="themes_getting_started.md"
+          accepts-web-file-names="themes.html,themes-intro.html"/>

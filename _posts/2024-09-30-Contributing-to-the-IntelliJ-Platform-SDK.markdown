@@ -11,6 +11,8 @@ menu-url: /Intellij
 menu-title: IntelliJ Platform Plugin SDK
 last-url: /Intellij/Key-Topics
 last-title: Key Topics
+next-url: /Intellij/SDK-Docs-Style-Guide
+next-title: SDK Docs Style Guide
 ---
 
 # Contributing to the IntelliJ Platform SDK
