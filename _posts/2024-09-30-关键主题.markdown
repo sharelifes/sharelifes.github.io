@@ -12,7 +12,7 @@ menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/About-This-Guide
 last-title: 关于本指南
 next-url: /zh/Intellij/Contributing-to-the-IntelliJ-Platform-SDK
-next-title: 为 IntelliJ Platform SDK 做贡献
+next-title: 为 IntelliJ 平台 SDK 做贡献
 ---
 
 # 关键主题
