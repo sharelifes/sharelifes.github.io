@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "为 IntelliJ Platform SDK 做贡献"
+title: "为 IntelliJ 平台 SDK 做贡献"
 date: 2024-09-30 23:30:00 +0800
 categories: jekyll update
 permalink: /zh/Intellij/Contributing-to-the-IntelliJ-Platform-SDK
@@ -11,6 +11,8 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/Key-Topics
 last-title: 关键主题
+next-url: /zh/Intellij/SDK-Docs-Style-Guide
+next-title: SDK文档样式指南
 ---
 # 为 IntelliJ 平台 SDK 做贡献
 
