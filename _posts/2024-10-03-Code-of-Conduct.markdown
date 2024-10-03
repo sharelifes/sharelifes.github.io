@@ -11,6 +11,8 @@ menu-url: /Intellij
 menu-title: IntelliJ Platform Plugin SDK
 last-url: /Intellij/SDK-Code-Sample-Guidelines
 last-title: SDK Code Sample Guidelines
+next-url: /Intellij/Code-Sample
+next-title: Code Samples
 ---
 
 # Code of Conduct

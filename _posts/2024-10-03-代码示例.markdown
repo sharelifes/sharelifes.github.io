@@ -1,0 +1,53 @@
+---
+layout: post
+title: "代码示例"
+date: 2024-10-03 15:45:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Code-Sample
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/Code-of-Conduct
+last-title: 行为准则
+---
+
+# 代码示例
+
+本指南附带了许多示例插件，这些插件可从专用的 intellij-sdk-code-samples GitHub 存储库获得。
+
+请参阅 **README.md**，其中列出了所有可用的代码示例和简短描述。
+
+每个样品都存储在一个专用文件夹中，并附有自己的 **README.md**。提供了指向本教程中相应教程或参考页面的链接，以及相关的 show-cased 元素列表。
+
+## 使用 Gradle
+
+所有示例插件都基于 Gradle，请参阅 创建插件 Gradle 项目 以开始使用。
+
+此外，使用IntelliJ IDEA处理Gradle 录屏教程全面介绍了 IntelliJ IDEA 中的 Gradle 功能。
+
+## 设置代码示例
+
+确保插件 `Git`、`Gradle` 和 `Plugin DevKit` 已启用。
+
+`Plugin DevKit` 插件与 IntelliJ IDEA 捆绑在一起，直到 2023.2. 版本。
+
+> ##### 插件 DevKit 可用性
+> 使用 IntelliJ IDEA 2023.3 或更高版本时，必须从 JetBrains Marketplace（插件主页）安装 `Plugin DevKit` 插件，因为它不再与 IDE 捆绑在一起。
+
+通过 **Git 克隆** intellij-sdk-code-samples GitHub 仓库，克隆成功后，IDE 建议打开项目。
+
+选择要通过 Gradle 工具窗口导入的代码示例。
+
+或者，通过选择 **_gradleCompositeBuild** 来导入所有可用的代码示例，这会链接复合构建中的所有 Gradle 项目。
+
+成功导入后，项目将作为新节点显示在 **Gradle** 工具窗口树中。
+
+在 **设置 \|构建、执行、部署 \|构建工具 \|Gradle** 代表 **Gradle JVM**。
+
+如有必要，从 Gradle 工具窗口工具栏调用 **Reload All Gradle Projects**。
+
+## 运行代码示例
+
+使用 Gradle `runIde` 任务运行插件，该任务显示在 **Gradle** 工具窗口中相应项目的 **Tasks** 节点下。

@@ -11,6 +11,8 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/SDK-Code-Sample-Guidelines
 last-title: SDK 代码示例指南
+next-url: /zh/Intellij/Code-Sample
+next-title: 代码示例
 ---
 
 # 行为准则

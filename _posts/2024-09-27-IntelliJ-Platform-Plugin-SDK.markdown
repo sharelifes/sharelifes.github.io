@@ -26,6 +26,7 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
       - _**[SDK Docs Style Guide][SDK Docs Style Guide]**_
       - _**[SDK Code Sample Guidelines][SDK Code Sample Guidelines]**_
     - _**[Code of Conduct][Code of Conduct]**_
+  - _**[Code Samples][Code Samples]**_
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
 [Home]: /Intellij/home
@@ -38,3 +39,4 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 [SDK Docs Style Guide]: /Intellij/SDK-Docs-Style-Guide
 [SDK Code Sample Guidelines]: /Intellij/SDK-Code-Sample-Guidelines
 [Code of Conduct]: /Intellij/Code-of-Conduct
+[Code Samples]: /Intellij/Code-Sample
