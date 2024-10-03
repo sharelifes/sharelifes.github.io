@@ -1,0 +1,182 @@
+---
+layout: post
+title: "SDK 代码示例指南"
+date: 2024-10-02 16:30:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/SDK-Code-Sample-Guidelines
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/SDK-Docs-Style-Guide
+last-title: SDK文档样式指南
+---
+
+
+# SDK 代码示例指南
+
+本文档介绍了用于编写开源 IntelliJ Platform SDK 代码示例的编码准则。在开始之前，请仔细阅读此页面以及行为准则和许可证文档。
+
+有关 为 IntelliJ 平台本身做贡献 的信息，请访问 为 IntelliJ 平台做贡献 。
+
+> 另请参阅 代码示例 有关概述。
+
+## 目标
+
+在创作 SDK 代码示例时，请记住以下注意事项：
+
+- SDK 示例的目的是演示 IntelliJ 平台的实现模式。
+- SDK 代码示例是说明性代码，旨在进行教学。
+    - 指令代码在一些关键方面与生产代码不同：
+        - 为了简单和简洁而牺牲一些健壮性。在需要说明实现缺陷的地方使用错误检查。
+        - 使实现尽可能简单，但使用 IntelliJ 平台、编程语言和库的全部功能。
+        - 为接口、类、字段、方法和扩展点使用有意义的名称。
+        - 编写说明性 Javadoc 注释。
+    - 代码示例取代了大量文档。
+- 以两个级别的 SDK 示例为目标：
+    - _basic_ 示例通过演示 IntelliJ 平台的有限区域来关注特定主题。它应该显示所有组件和架构，但最终完成一些基本的事情。例如，通过仅存储 `String` 来演示持久性。
+    - _advanced_ 示例演示了 IntelliJ 平台的不同部分如何集成和协同工作，例如将检查或意图与重要的 PsiTree 操作相结合。
+
+最终，目标是为开发人员提供在基于 IntelliJ Platform 的插件中实现功能的路线图。每个路线图应包含：
+
+- 指向 SDK 文档的指针，其中包含实现该功能所需的 IntelliJ 平台 API。
+- 指向相关 _basic_ SDK 示例插件的指针。
+- 指向相关 _advanced_ SDK 示例插件的指针。
+
+## 插件版权声明
+
+在 JetBrains 编写的所有示例插件中使用标准的 intellij-community 版权声明：
+
+`Copyright 2000-2023 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license.`
+
+> 版权声明必须显示在每个源文件的顶部。使用 IntelliJ Platform SDK 版权配置文件。
+
+## SDK 插件的目录命名约定
+
+对于 _basic_ 示例，插件目录名称派生自演示的 IntelliJ 平台扩展点。例如，**foo_basics**，其中 foo 对应于 IntelliJ Platform 框架、扩展点或组件。一些命名示例包括 **facet_basics** 和 **editor_basics**。每个 IntelliJ 平台 API 区域只有一个基本示例。
+
+对于 _advanced_ 代码示例，名称应反映插件提供的复杂功能，而不是 IntelliJ 平台 API。高级示例将交叉引用示例中演示的 IntelliJ 平台 API。
+
+插件根目录名称中唯一允许的符号字符是下划线，例如 **foo_basics** 或 **max_opened_projects**。但是，下划线不应用于任何其他元件名称，例如 `Artifact ID`、`plugin ID`、`package names` 等。相反，请将长名称连接到 camelCase 中，例如 **maxOpenedProjects**。
+
+## 组和工件 ID
+
+在创建基于 Gradle 的 IntelliJ Platform 插件时，将定义插件的 Maven 坐标（`Group ID`、`Artifact ID`、`Version`）。
+
+SDK 插件的 `Group ID` 始终为 `org.intellij.sdk`。
+
+`Artifact ID` 是插件目录名称的简短衍生。`Artifact ID` 不应包含符号。
+
+对于 _basic_ 代码示例，不必在`Artifact ID`中包含`basic`。例如，`foo_basics`目录名称将具有`Artifact ID` `foo`。
+
+具有较长目录名称的插件（例如 **conditional_operator_intention**）可能具有更简洁的 `Artifact ID`: `conditionalOperatorIntention`。（出于遗留原因，**conditional_operator_intention** 插件使用更简洁的`Artifact ID`。
+
+## 插件 ID 约定
+
+插件 ID 显示在 **plugin.xml** 文件中的 `<id>` 元素之间。
+
+通常，插件 ID 是 `Group ID` 与 `Artifact ID` 连接。例如，像 **facet_basics** 这样的插件的插件 ID 为`org.intellij.sdk.facet`。
+
+插件 ID 不包含下划线。
+
+## 插件包名称
+
+plugins 中的包应以 plugin ID 开头。如果插件中只有一个包，则包名与插件 ID 相同。可以添加其他后缀词（以 “.” 字符分隔）以形成更具体的包名。包名称不包含下划线。
+
+## 插件目录结构
+
+SDK 示例代码应具有标准目录占用空间。标准化结构不仅使示例更易于导航和理解，而且它基于默认的 Gradle 插件项目结构构建。
+
+请注意，插件根文件夹下面的目录不应包含下划线字符，并且应根据需要使用 camelCase。以下是 `foo_basics` 插件的示例目录结构。
+
+    code_samples/
+        foo_basics/
+            gradle/
+            src/
+                main/
+                    java/
+                        org.intellij.sdk.foo/
+                        icons/
+                            SdkIcons.java     # The standard SDK icon class
+                    resources/
+                        icons/
+                            sdk_16.svg        # The standard SDK icon for menus, etc.
+                        META-INF/
+                            plugin.xml        # The plugin configuration file
+                            pluginIcon.svg    # The standard SDK plugin icon
+                test/                         # Omit if there are no tests
+                    java/
+                        org.intellij.sdk.foo/
+                    resources/
+            build.gradle.kts
+            gradlew
+            gradle.bat
+            settings.gradle.kts
+            README.md
+
+## Gradle 构建脚本约定
+
+SDK 代码示例必须使用 Gradle 开发。在撰写本文时，在 SDK 代码示例中使用 Gradle 仍然严重依赖于 **plugin.xml** 来指定插件配置。在稍后的第二阶段，SDK 代码示例将过渡到更多地依赖 Gradle 配置。
+
+Gradle 构建脚本文件的默认内容由 New Project Wizard 生成。SDK 代码示例的 Gradle 构建脚本文件的一致结构对于清晰起见至关重要，并且基于项目向导生成的默认值。SDK 代码示例 Gradle 构建脚本中的注释应仅提请注意 Gradle 配置中对于插件唯一的部分。
+
+对于 SDK 代码示例，需要对插件向导生成的默认 **build.gradle.kts** 文件进行一些更改：
+
+维护 Gradle 属性 `version` （`project.version`） 和 `group` （`project.group`）。请参阅插件 Gradle 属性部分，了解这些 Gradle 属性与 **plugin.xml** 中的元素有何关系。
+
+将以下语句添加到修补 DSL （`patchPluginXml {...}`） 部分：
+
+```
+// Patches <version> value in plugin.xml
+version.set(project.version)
+sinceBuild.set("221")
+untilBuild.set("223.*")
+```
+
+## plugin.xml 约定
+
+SDK 代码示例的 **plugin.xml** 配置文件的一致结构非常重要，因为我们希望引起对插件文件独特部分的注意。对独特的元素和配置进行大量评论，对其余部分进行少量评论。
+
+SDK 代码示例 **plugin.xml** 文件中的元素序列为：
+
+- `<id>` 使用完全限定的插件 ID。
+- `<name>` name 值不必与 Plugin Directory Name 匹配。该名称用于显示目的，应反映插件的功能。名称必须以 “SDK： ” 开头。
+- `<version>` MAJOR.MINOR.FIX 格式中的代码示例版本。
+    - MAJOR 对应于功能的重大升级。
+    - MINOR 对应于较小的重构和功能的小改进。
+    - FIX 对应于无需重大重构即可修复问题的更改。
+- `<depends>` 在模块 `com.intellij.modules.platform` 中包含至少一个依赖项，以指示插件与基于 IntelliJ 平台的产品的基本兼容性。根据需要添加包含模块 FQN 的 `<depends>` 元素，以描述与多个产品的更专业兼容性，以及任何其他插件依赖项。
+- `<description>`是对所演示内容以及用户如何访问该功能的简要说明。如果插件默认覆盖 IDE 行为（例如 **tree_structure_provider**），则必须在描述中注明。
+- `<change-notes>`是按版本号排序的列表，其中包含每个版本的更改的简要说明。
+- 将`<vendor>` 值设置为 `IntelliJ Platform SDK`。设置属性：
+    - `email` 省略此属性。
+      - `url` 指向 JetBrains Marketplace `https://plugins.jetbrains.com`。
+- 其余的插件配置元素应仅在特定插件需要时显示。
+
+## README 文件
+
+IntelliJ Platform SDK 中提供的每个代码示例都应包含一个 README 文件，用于描述示例用途及其内容。`SAMPLE_README.md` 文件包含一个模板，该模板应该用作进一步编写的初始草稿。
+
+每个 **README.md** 文件都应该具有相同的结构，以便更好地导航和可读性：
+
+- 一个标题，其中包含指向主 IntelliJ SDK 文档的链接和示例引用的页面。
+- _Quickstart_ 部分简要介绍了该示例的用途及其实现的 IntelliJ SDK 的重要部分。
+- _Extension Points_部分（如果是实现）包含已实现扩展点的列表、指向实现类的链接以及扩展类的名称。
+- _Actions_ 部分（如果是实现的），其中包含已实现的操作、操作 ID、指向实现类的链接以及基操作类的名称的列表。
+- _Listeners_ 部分（如果是实现的），其中包含已实现的应用程序级或项目级侦听器的列表、指向实现类的链接以及基本侦听器类的名称。
+- 文档中显示的每个链接都必须列在文件的最底部，并带有清晰的链接 ID 和适当的前缀，具体取决于链接上下文（`docs：`、`file：` 等）。
+
+## 测试
+
+IntelliJ Platform SDK 代码示例应针对`since-build`版本进行构建和测试。
+
+代码示例应干净利落地构建，没有警告或错误，并且新代码示例应通过所有默认的 IntelliJ IDEA 代码检查。
+
+测试人员应完成以下清单。此处的术语“IDE”是指插件设计为在其中运行的基于 IntelliJ 平台的 IDE：
+
+- 插件应在 IDE 中加载。
+- 有关插件的正确信息应显示在 **设置 \|插件** 面板。
+- 如果适用，插件 UI（如工具窗口、菜单添加等）应正确显示。
+- 应使用示例文件测试插件的功能。
+- 如果适用，插件应通过单元测试。

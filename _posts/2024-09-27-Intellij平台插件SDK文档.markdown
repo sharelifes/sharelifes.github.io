@@ -24,6 +24,7 @@ last-title: Java教程
     - _**[Key Topics][Key Topics]**_: 关键主题
     - _**[Contributing to the IntelliJ Platform SDK][Contributing to the IntelliJ Platform SDK]**_: 为 IntelliJ 平台 SDK 做贡献
       - _**[SDK Docs Style Guide][SDK Docs Style Guide]**_: SDK文档样式指南
+      - _**[SDK Code Sample Guidelines][SDK Code Sample Guidelines]**_: SDK代码示例指南
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
 [Home]: /zh/Intellij/home
@@ -34,3 +35,4 @@ last-title: Java教程
 [Key Topics]: /zh/Intellij/Key-Topics
 [Contributing to the IntelliJ Platform SDK]: /zh/Intellij/Contributing-to-the-IntelliJ-Platform-SDK
 [SDK Docs Style Guide]: /zh/Intellij/SDK-Docs-Style-Guide
+[SDK Code Sample Guidelines]: /zh/Intellij/SDK-Code-Sample-Guidelines

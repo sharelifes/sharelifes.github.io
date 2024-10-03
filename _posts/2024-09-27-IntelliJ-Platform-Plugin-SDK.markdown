@@ -24,6 +24,7 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
     - _**[Key Topics][Key Topics]**_
     - _**[Contributing to the IntelliJ Platform SDK][Contributing to the IntelliJ Platform SDK]**_
       - _**[SDK Docs Style Guide][SDK Docs Style Guide]**_
+      - _**[SDK Code Sample Guidelines][SDK Code Sample Guidelines]**_
     
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
@@ -35,3 +36,4 @@ Copied by [IntelliJ Platform Plugin SDK][jetbrains].
 [Key Topics]: /Intellij/Key-Topics
 [Contributing to the IntelliJ Platform SDK]: /Intellij/Contributing-to-the-IntelliJ-Platform-SDK
 [SDK Docs Style Guide]: /Intellij/SDK-Docs-Style-Guide
+[SDK Code Sample Guidelines]: /Intellij/SDK-Code-Sample-Guidelines
