@@ -9,7 +9,7 @@ language: "en"
 item: post
 menu-url: /Intellij
 menu-title: IntelliJ Platform Plugin SDK
-last-url: /Intellij/Home
+last-url: /Intellij/home
 last-title: Home
 next-url: /Intellij/Contributing-to-the-IntelliJ-Platform
 next-title: Contributing to the IntelliJ Platform

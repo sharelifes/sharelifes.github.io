@@ -9,7 +9,7 @@ language: "zh"
 item: post
 menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
-last-url: /zh/Intellij/Home
+last-url: /zh/Intellij/home
 last-title: 简介
 next-url: /zh/Intellij/Contributing-to-the-IntelliJ-Platform
 next-title: 为 IntelliJ 平台做贡献
