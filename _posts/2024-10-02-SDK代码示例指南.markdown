@@ -11,6 +11,8 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/SDK-Docs-Style-Guide
 last-title: SDK文档样式指南
+next-url: /zh/Intellij/Code-of-Conduct
+next-title: 行为准则
 ---
 
 

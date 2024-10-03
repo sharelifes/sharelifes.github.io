@@ -1,0 +1,20 @@
+---
+layout: post
+title: "行为准则"
+date: 2024-10-03 15:30:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Code-of-Conduct
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/SDK-Code-Sample-Guidelines
+last-title: SDK 代码示例指南
+---
+
+# 行为准则
+
+> JetBrains 开源和社区行为准则。
+
+本项目和相应的社区受 [JetBrains 开源和社区行为准则]（https://github.com/jetbrains#code-of-conduct） 的约束。请务必阅读它。
