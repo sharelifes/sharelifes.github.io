@@ -27,6 +27,7 @@ last-title: Java教程
       - _**[SDK Code Sample Guidelines][SDK Code Sample Guidelines]**_: SDK代码示例指南
     - _**[Code of Conduct][Code of Conduct]**_: 行为准则
   - _**[Code Samples][Code Samples]**_: 代码示例
+  - _**[Getting Help][Getting Help]**_: 获取帮助
 
 [jetbrains]: https://plugins.jetbrains.com/docs/intellij/welcome.html
 [Home]: /zh/Intellij/home
@@ -40,3 +41,4 @@ last-title: Java教程
 [SDK Code Sample Guidelines]: /zh/Intellij/SDK-Code-Sample-Guidelines
 [Code of Conduct]: /zh/Intellij/Code-of-Conduct
 [Code Samples]: /zh/Intellij/Code-Sample
+[Getting Help]: /zh/Intellij/Getting-Help

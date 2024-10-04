@@ -11,6 +11,8 @@ menu-url: /zh/Intellij
 menu-title: IntelliJ平台插件SDK文档
 last-url: /zh/Intellij/Code-of-Conduct
 last-title: 行为准则
+next-url: /zh/Intellij/Getting-Help
+next-title: 获取帮助
 ---
 
 # 代码示例

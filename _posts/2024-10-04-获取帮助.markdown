@@ -1,0 +1,45 @@
+---
+layout: post
+title: "获取帮助"
+date: 2024-10-04 10:45:00 +0800
+categories: jekyll update
+permalink: /zh/Intellij/Getting-Help
+background: '/assets/images/banner.jpg'
+language: "zh"
+item: post
+menu-url: /zh/Intellij
+menu-title: IntelliJ平台插件SDK文档
+last-url: /zh/Intellij/Code-Sample
+last-title: 代码示例
+---
+
+# 获取帮助
+
+文档不全？或者开发插件的时候被问题卡住了？请阅读下面各种情况下获得支持的所有方式。
+
+请在所有的交流中使用英语。
+
+## 本指南的问题
+
+如果你在使用本指南的时候遇到问题，例如内容缺失，错误或者内容混乱，请在 YouTrack上提交问题 。如果问题很容易得到解决，你也可以提交 拉取请求。
+
+如果你想报告特定页面的（小）问题，你还可以使用每个页面底部的 **Was this page helpful** 反馈表，方法是点击 **No** 按钮后提供更多详细信息。请尽量具体的描述您的问题并提供您的电子邮件地址，以便于后续问题沟通并在更新时获取通知。
+
+如果你只是想对本指南提供反馈，同样也是通过提交问题来进行，即便只是为了讨论，提出改进的想法或建议。
+
+> 请不要使用 **IJSDK** YouTrack 项目来发起插件开发或者产品支持请求 — 这个项目的本意是关于SDK和文档的。如果使用下列方式之一，你会更好的得到响应。
+
+## 代码方面的问题-支持问题
+
+> 请参考 插件开发常见问题问答 和 探索 IntelliJ Platform API 来获取相关技巧和窍门。 
+
+对于与插件开发本身有关的问题和难题（和本指南内容无关），你有几个选择： 
+
+- JetBrains Platform Slack上的#intellij-platform — 这个聊天室是讨论有关扩展JetBrains产品问题的好地方，解答来自JetBrains团队成员和社区成员。
+- 插件开发论坛 - 在支持论坛上发布消息。JetBrains团队成员会定期更新并解答问题。 
+
+当然，所有收到的问题都将用于尝试和改进本指南。
+
+## 产品问题
+
+如果在使用基于 IntelliJ 平台的产品（例如 IntelliJ IDEA、WebStorm、Rider 等）时遇到问题，请使用任何常规产品支持渠道。
